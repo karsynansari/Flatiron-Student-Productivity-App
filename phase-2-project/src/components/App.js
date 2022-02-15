@@ -5,7 +5,7 @@ import Notepad from "./Notepad";
 import ToDoPage from "./ToDoPage";
 
 function App() {
-  const [toDos, setToDos] = useState([])
+  const [toDos, setToDos] = useState([]);
   useEffect(() => {
     fetch("http://localhost:3000/toDo")
       .then((response) => response.json())
@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header />
       <HomePage />
-      <ToDoPage toDos = {toDos}/>
+      <ToDoPage toDos={toDos} />
       <Notepad />
     </div>
   );
