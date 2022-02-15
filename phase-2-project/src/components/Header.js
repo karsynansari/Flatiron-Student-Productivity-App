@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import Notepad from "./Notepad";
 import ToDoPage from "./ToDoPage";
@@ -6,13 +6,19 @@ import HomePage from "./HomePage";
 
 function Header() {
   const [page, setPage] = useState("/");
+  const [toDos, setToDos] = useState([]);
 
+  useEffect(() => {
+    fetch("http://localhost:3000/toDo")
+      .then((response) => response.json())
+      .then(setToDos);
+  }, []);
   function getCurrentPage() {
     switch (page) {
       case "/":
         return <HomePage />;
       case "/todos":
-        return <ToDoPage />;
+        return <ToDoPage toDos={toDos} />;
       case "/notepad":
         return <Notepad />;
       default:
