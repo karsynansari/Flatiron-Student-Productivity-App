@@ -1,18 +1,16 @@
 {
-  "data": {
-    "toDo": [
-      {
-        "id": 1,
-        "task": "Study React Router",
-        "dueDate": "",
-        "completed": "false"
-      }
-    ],
-    "note": [
-      {
-        "id": 1,
-        "noteText": "hello"
-      }
-    ]
-  }
+  "toDo": [
+    {
+      "id": 1,
+      "task": "Study React Router",
+      "dueDate": "",
+      "completed": false
+    }
+  ],
+  "note": [
+    {
+      "id": 1,
+      "noteText": "hello"
+    }
+  ]
 }
