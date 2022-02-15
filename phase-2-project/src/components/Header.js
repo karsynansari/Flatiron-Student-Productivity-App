@@ -18,7 +18,7 @@ function Header() {
       case "/":
         return <HomePage />;
       case "/todos":
-        return <ToDoPage toDos={toDos} />;
+        return <ToDoPage toDos={toDos} setToDos={setToDos}/>;
       case "/notepad":
         return <Notepad />;
       default:

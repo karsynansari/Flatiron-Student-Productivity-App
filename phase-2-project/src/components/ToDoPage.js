@@ -2,12 +2,12 @@ import React from "react";
 import ToDoForm from "./ToDoForm";
 import ToDoItem from "./ToDoItem";
 
-function ToDoPage({ toDos }) {
+function ToDoPage({ toDos, setToDos }) {
   const eachToDo = toDos.map((todo) => <ToDoItem key={todo.id} todo={todo} />);
   return (
     <div>
       <div>ToDoPage</div>
-      <ToDoForm />
+      <ToDoForm setToDos={setToDos}/>
       <ul> {eachToDo}</ul>
     </div>
   );
