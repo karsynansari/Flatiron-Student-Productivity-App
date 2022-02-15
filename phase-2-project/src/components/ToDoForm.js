@@ -3,7 +3,7 @@ import React from "react";
 function Todos() {
   return (
     <div>
-      <hi1>Add To-Do</hi1>
+      <h1>Add To-Do</h1>
       <form>
         <div>
           <input type="text" name="task" placeholder="Task.." />
