@@ -1,0 +1,16 @@
+{
+  "toDo": [
+    {
+      "id": 1,
+      "task": "Study React Router",
+      "dueDate": "",
+      "completed": false
+    }
+  ],
+  "note": [
+    {
+      "id": 1,
+      "noteText": "hello"
+    }
+  ]
+}
