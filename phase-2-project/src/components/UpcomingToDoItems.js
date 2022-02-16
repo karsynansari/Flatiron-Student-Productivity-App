@@ -1,13 +1,12 @@
+import React from "react";
 
-import React from 'react'
-
-function UpcomingToDoItems({toDoItem}) {
+function UpcomingToDoItems({ toDo }) {
   return (
     <div className="upcomingToDos">
-      <div /*className="upcomingToDoItem"*/>Task: {toDoItem.task}</div>
-      <div /*className="upcomingToDoDueDate"*/>Due: {toDoItem.dueDate}</div>
+      <div /*className="upcomingToDoItem"*/>Task: {toDo.task}</div>
+      <div /*className="upcomingToDoDueDate"*/>Due: {toDo.dueDate}</div>
     </div>
   );
 }
 
-export default UpcomingToDoItems
+export default UpcomingToDoItems;

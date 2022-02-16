@@ -1,20 +1,29 @@
 import React from "react";
 import UpcomingToDoItems from "./UpcomingToDoItems";
 
-// let today = new Date().toISOString().slice(0, 10);
-// console.log(today);
-function UpcomingToDos({toDos}) {
-
-  let toDosByDate = toDos.map((toDoItem) => <UpcomingToDoItems key={toDoItem.id} toDoItem={toDoItem}/>);
-  // let toDosByDate = toDos.filter(
-  //   (toDo) => toDo.dueDate >= today && toDo.dueDate <= today + 5
-  // );
-  // console.log(toDosByDate)
-  
+function UpcomingToDos({ toDos }) {
+  let today = new Date();
+  // let toDosByDate = toDos.map((toDoItem) => <UpcomingToDoItems key={toDoItem.id} toDoItem={toDoItem}/>);
+  let toDosByDate = toDos.filter((toDo) => {
+    let taskDueDate = new Date(toDo.dueDate);
+    let diffSecs = taskDueDate.getTime() - today.getTime();
+    let diffDays = diffSecs / (1000 * 3600 * 24);
+    return diffDays <= 5 && diffDays > 0;
+    // if (diffDays <= 5) {
+    //   <UpcomingToDoItems key={toDo.id} toDo = {toDo}/>
+    //   return true
+    // } return false
+  });
+  console.log(toDosByDate);
+  let eachToDoByDate = toDosByDate.map((toDo) => (
+    <UpcomingToDoItems key={toDo.id} toDo={toDo} />
+  ));
+  console.log("upcoming todos");
+  console.log(eachToDoByDate);
   return (
     <div>
       <h2>Upcoming ToDos</h2>
-      <div>{toDosByDate}</div>
+      <div>{eachToDoByDate}</div>
     </div>
   );
 }
