@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 function ToDoItem({ todo, setToDos }) {
+  const [completed, setCompleted] = useState(false);
+
+  function handleCompleteUncomplete() {
+    setCompleted(!completed);
+  }
+
   function handleDelete() {
     console.log("click", todo.id);
     fetch(`http://localhost:3000/toDo/${todo.id}`, {
@@ -18,7 +24,11 @@ function ToDoItem({ todo, setToDos }) {
       <button className="delete" onClick={handleDelete}>
         Delete
       </button>
-      {/* <button className="complete">Complete</button> */}
+      {completed ? (
+        <button onClick={handleCompleteUncomplete}>Complete</button>
+      ) : (
+        <button onClick={handleCompleteUncomplete}>Mark As Completed</button>
+      )}
     </li>
   );
 }
