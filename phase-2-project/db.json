@@ -4,16 +4,6 @@
       "id": 1,
       "task": "Study React Router",
       "dueDate": "2022-2-15"
-    },
-    {
-      "task": "helloooo",
-      "dueDate": "2022-02-21",
-      "id": 2
-    },
-    {
-      "task": "Why is this broken?",
-      "dueDate": "2022-03-09",
-      "id": 3
     }
   ],
   "note": [
