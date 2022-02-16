@@ -16,7 +16,7 @@ function Header() {
   function getCurrentPage() {
     switch (page) {
       case "/":
-        return <HomePage />;
+        return <HomePage toDos={toDos} />;
       case "/todos":
         return <ToDoPage toDos={toDos} setToDos={setToDos}/>;
       case "/notepad":

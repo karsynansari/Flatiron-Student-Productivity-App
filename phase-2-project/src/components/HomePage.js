@@ -1,11 +1,11 @@
 import React from "react";
 import UpcomingToDos from "./UpcomingToDos";
 
-function HomePage() {
+function HomePage({toDos}) {
   return (
     <div>
       <h1>Weather App placeholder</h1>
-      <UpcomingToDos />
+      <UpcomingToDos toDos={toDos}/>
     </div>
   );
 }
