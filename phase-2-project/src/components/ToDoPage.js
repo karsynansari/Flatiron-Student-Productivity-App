@@ -8,8 +8,7 @@ function ToDoPage({ toDos, setToDos }) {
   ));
   return (
     <div>
-      <div>ToDoPage</div>
-      <ToDoForm setToDos={setToDos}/>
+      <ToDoForm setToDos={setToDos} />
       <ul> {eachToDo}</ul>
     </div>
   );

@@ -12,7 +12,7 @@ function ToDoItem({ todo, setToDos }) {
     );
   }
   return (
-    <li className='"todo'>
+    <li className="todo">
       <div className="todoitem">{todo.task}</div>
       <div className="duedate">{todo.dueDate}</div>
       <button className="delete" onClick={handleDelete}>

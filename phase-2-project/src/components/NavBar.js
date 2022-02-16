@@ -7,7 +7,7 @@ function NavBar({ onChangePage }) {
   }
 
   return (
-    <nav>
+    <nav className="navbar">
       <a onClick={handleLinkClick} href="/">
         Home
       </a>
