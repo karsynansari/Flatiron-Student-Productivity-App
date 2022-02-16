@@ -3,7 +3,9 @@ import ToDoForm from "./ToDoForm";
 import ToDoItem from "./ToDoItem";
 
 function ToDoPage({ toDos, setToDos }) {
-  const eachToDo = toDos.map((todo) => <ToDoItem key={todo.id} todo={todo} />);
+  const eachToDo = toDos.map((todo) => (
+    <ToDoItem key={todo.id} todo={todo} setToDos={setToDos} />
+  ));
   return (
     <div>
       <div>ToDoPage</div>

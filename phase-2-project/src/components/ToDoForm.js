@@ -5,10 +5,8 @@ const newToDoObj = {
 };
 function Todos({ setToDos }) {
   const [newToDo, setNewToDo] = useState(newToDoObj);
-  console.log(newToDo)
 
   function handleChange(e) {
-    console.log(e.target.value);
     setNewToDo((newToDoState) => ({
       ...newToDoState,
       [e.target.name]: e.target.value,
@@ -28,7 +26,7 @@ function Todos({ setToDos }) {
       .then((response) => response.json())
       .then((data) => setToDos((existingToDos) => [...existingToDos, data]));
 
-      setNewToDo(newToDoObj)
+    setNewToDo(newToDoObj);
   }
 
   return (
