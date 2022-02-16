@@ -18,7 +18,7 @@ function Header() {
       case "/":
         return <HomePage toDos={toDos} />;
       case "/todos":
-        return <ToDoPage toDos={toDos} setToDos={setToDos}/>;
+        return <ToDoPage toDos={toDos} setToDos={setToDos} />;
       case "/notepad":
         return <Notepad />;
       default:
@@ -28,7 +28,10 @@ function Header() {
 
   return (
     <div>
-      <h1>Flatiron School Productivity App</h1>
+      <h1 className="header">
+        <span className="header-slash">// </span>
+        Flatiron School Productivity App
+      </h1>
       <NavBar onChangePage={setPage} />
       {getCurrentPage()}
     </div>

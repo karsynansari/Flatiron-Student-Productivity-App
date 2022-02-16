@@ -4,7 +4,7 @@ function Note({ id, text, date, handleDeleteNote }) {
   return (
     <div className="note">
       <span>{text}</span>
-      <div class-name="note-footer">
+      <div className="saved-note-footer">
         <small>{date}</small>
         <button className="delete-icon" onClick={() => handleDeleteNote(id)}>
           Delete

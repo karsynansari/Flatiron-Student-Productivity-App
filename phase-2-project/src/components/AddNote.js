@@ -26,11 +26,11 @@ function AddNote({ handleAddNote }) {
         value={noteText}
         onChange={handleChange}
       ></textarea>
-      <div className="note-footer">
+      <div className="add-note-footer">
         <small> {characterLimit - noteText.length} Remaining</small>
         <button className="save" onClick={handleSaveClick}>
           Save
-        </button>{" "}
+        </button>
       </div>
     </div>
   );

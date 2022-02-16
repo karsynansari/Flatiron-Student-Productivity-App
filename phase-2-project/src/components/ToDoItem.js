@@ -18,7 +18,7 @@ function ToDoItem({ todo, setToDos }) {
     );
   }
   return (
-    <div className="todo">
+    <li className="todo">
       <div className="todoitem">{todo.task}</div>
       <div className="duedate">{todo.dueDate}</div>
       <button className="delete" onClick={handleDelete}>
@@ -29,7 +29,7 @@ function ToDoItem({ todo, setToDos }) {
       ) : (
         <button onClick={handleCompleteUncomplete}>Mark As Completed</button>
       )}
-    </div>
+    </li>
   );
 }
 
