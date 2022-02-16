@@ -31,10 +31,15 @@ function Todos({ setToDos }) {
 
   return (
     <div>
-      <h1>Add To-Do</h1>
-      <form onSubmit={handleSubmit}>
+      {/* <h1>Add To-Do</h1> */}
+      <br />
+      <form onSubmit={handleSubmit} className="form">
         <div>
+          <span className="form-name">
+            <h1>Add To-Do</h1>
+          </span>
           <input
+            className="form-item"
             type="text"
             name="task"
             value={newToDo.task}
@@ -44,6 +49,7 @@ function Todos({ setToDos }) {
         </div>
         <div>
           <input
+            className="form-item"
             type="date"
             name="dueDate"
             value={newToDo.dueDate}
@@ -52,7 +58,7 @@ function Todos({ setToDos }) {
           />
         </div>
         {/* <input type="checkbox" value="checked" /> */}
-        <input type="submit" value="Submit" />
+        <input className="form-submit" type="submit" value="Submit" />
       </form>
     </div>
   );

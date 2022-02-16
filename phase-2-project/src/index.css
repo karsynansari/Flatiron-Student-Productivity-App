@@ -71,13 +71,13 @@ nav a.active {
 }
 
 .note.new {
-  background-color: rgb(149, 209, 250);
+  background: rgb(196, 246, 250);
 }
 
 textarea {
   border: none;
   resize: none;
-  background-color: rgb(149, 209, 250);
+  background: rgb(196, 246, 250);
 }
 
 textarea:focus {
@@ -151,4 +151,43 @@ textarea:focus {
   font-weight: 500;
   padding: 15px;
   margin-top: none;
+}
+
+.form-name {
+}
+
+.form {
+  background: rgb(196, 246, 250);
+  padding: 15px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: left;
+}
+
+.form-item {
+  margin-bottom: 10px;
+  border-color: black;
+  border-width: 3px;
+  font-size: large;
+}
+
+.form-submit {
+  border-color: black;
+  border-width: 3px;
+  background-color: white;
+  font-size: large;
+  cursor: pointer;
+}
+
+.todo {
+  background-color: rgb(241, 243, 222);
+  border-radius: 10px;
+}
+
+.delete-todo {
+  background-color: white;
+  margin-right: 10px;
+}
+.complete-todo {
+  background-color: white;
 }
