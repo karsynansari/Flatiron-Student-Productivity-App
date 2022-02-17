@@ -7,18 +7,28 @@ import HomePage from "./HomePage";
 function Header() {
   const [page, setPage] = useState("/");
   const [toDos, setToDos] = useState([]);
+  
 
   useEffect(() => {
     fetch("http://localhost:3000/toDo")
       .then((response) => response.json())
       .then(setToDos);
   }, []);
+
+  
+
   function getCurrentPage() {
     switch (page) {
       case "/":
         return <HomePage toDos={toDos} />;
       case "/todos":
-        return <ToDoPage toDos={toDos} setToDos={setToDos} />;
+        return (
+          <ToDoPage
+          
+            toDos={toDos}
+            setToDos={setToDos}
+          />
+        );
       case "/notepad":
         return <Notepad />;
       default:

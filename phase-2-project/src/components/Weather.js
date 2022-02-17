@@ -1,10 +1,8 @@
-import React from 'react'
+import React from "react";
 
-function Weather() {
-  
-  return (
-    <div>Weather</div>
-  )
+function Weather({ data }) {
+  console.log(data);
+  return <div>Weather</div>;
 }
 
-export default Weather
+export default Weather;
