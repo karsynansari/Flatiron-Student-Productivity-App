@@ -20,9 +20,10 @@ function UpcomingToDos({ toDos }) {
   ));
   console.log("upcoming todos");
   console.log(eachToDoByDate);
+  
   return (
-    <div>
-      <h2>Upcoming ToDos</h2>
+    <div className="upcoming-todos">
+      <h2>Due in the next 5 days:</h2>
       <div>{eachToDoByDate}</div>
     </div>
   );
