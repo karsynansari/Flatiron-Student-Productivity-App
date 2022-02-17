@@ -8,7 +8,7 @@ function UpcomingToDos({ toDos }) {
     let taskDueDate = new Date(toDo.dueDate);
     let diffSecs = taskDueDate.getTime() - today.getTime();
     let diffDays = diffSecs / (1000 * 3600 * 24);
-    return diffDays <= 5 && diffDays > 0;
+    return diffDays <= 5 && diffDays > -1;
   });
 
   let eachToDoByDate = toDosByDate.map((toDo) => (

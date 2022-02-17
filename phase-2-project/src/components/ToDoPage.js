@@ -19,6 +19,10 @@ function ToDoPage({ toDos, setToDos }) {
     />
   ));
 
+  // const completedTodos = toDos.filter((todo)=> (
+  //   console.log("completed todo")
+  // ))
+
   return (
     <div>
       <ToDoForm setToDos={setToDos} />
@@ -31,7 +35,7 @@ function ToDoPage({ toDos, setToDos }) {
           ? "Hide Completed ToDo's"
           : "Show Completed ToDo's"}
       </button>
-      <ul> {eachToDo}</ul>
+      {hideCompletedButton ? <ul> {eachToDo}</ul> : null}
     </div>
   );
 }
