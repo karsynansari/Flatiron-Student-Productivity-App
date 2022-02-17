@@ -2,6 +2,7 @@ import React, { useState } from "react";
 const newToDoObj = {
   task: "",
   dueDate: "",
+  completed: false
 };
 function Todos({ setToDos }) {
   const [newToDo, setNewToDo] = useState(newToDoObj);

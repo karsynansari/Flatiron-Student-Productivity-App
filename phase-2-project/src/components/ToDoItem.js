@@ -2,11 +2,6 @@ import React, { useState } from "react";
 
 function ToDoItem({ todo, setToDos }) {
   const [completed, setCompleted] = useState(false);
-
-  function handleCompleteUncomplete() {
-    setCompleted(!completed);
-  }
-
   function handleDelete() {
     console.log("click", todo.id);
     fetch(`http://localhost:3000/toDo/${todo.id}`, {
@@ -16,6 +11,10 @@ function ToDoItem({ todo, setToDos }) {
     setToDos((currentToDos) =>
       currentToDos.filter((oneToDo) => oneToDo.id !== todo.id)
     );
+  }
+
+  function handleCompleted() {
+    setCompleted(!completed);
   }
 
   return (

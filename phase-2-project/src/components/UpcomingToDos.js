@@ -9,18 +9,15 @@ function UpcomingToDos({ toDos }) {
     let diffSecs = taskDueDate.getTime() - today.getTime();
     let diffDays = diffSecs / (1000 * 3600 * 24);
     return diffDays <= 5 && diffDays > 0;
-    // if (diffDays <= 5) {
-    //   <UpcomingToDoItems key={toDo.id} toDo = {toDo}/>
-    //   return true
-    // } return false
   });
-  console.log(toDosByDate);
+
   let eachToDoByDate = toDosByDate.map((toDo) => (
     <UpcomingToDoItems key={toDo.id} toDo={toDo} />
   ));
+
   console.log("upcoming todos");
   console.log(eachToDoByDate);
-  
+
   return (
     <div className="upcoming-todos">
       <h2>Due in the next 5 days:</h2>

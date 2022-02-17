@@ -3,7 +3,8 @@
     {
       "id": 1,
       "task": "Study React Router",
-      "dueDate": "2022-2-15"
+      "dueDate": "2022-2-15",
+      "completed": false
     },
     {
       "task": "Why is this broken?",
