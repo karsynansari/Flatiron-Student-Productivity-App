@@ -3,27 +3,14 @@
     {
       "id": 1,
       "task": "Study React Router",
-      "dueDate": "2022-2-15"
+      "dueDate": "2022-2-15",
+      "completed": false
     },
     {
-      "task": "Why is this broken?",
-      "dueDate": "2022-02-25",
-      "id": 2
-    },
-    {
-      "task": "Study harder",
+      "task": "i'm typing in here ",
       "dueDate": "2022-02-28",
-      "id": 3
-    },
-    {
-      "task": "helloooo",
-      "dueDate": "2022-02-17",
-      "id": 4
-    },
-    {
-      "task": "Study harder",
-      "dueDate": "2022-02-18",
-      "id": 5
+      "completed": false,
+      "id": 2
     }
   ],
   "note": [
