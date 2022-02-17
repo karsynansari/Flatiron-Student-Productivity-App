@@ -13,7 +13,7 @@ function ToDoItem({ todo, setToDos }) {
     );
   }
 
-  function handleCompleted() {
+  function handleCompleteUncomplete() {
     setCompleted(!completed);
   }
 
