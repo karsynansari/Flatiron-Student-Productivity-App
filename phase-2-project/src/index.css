@@ -41,22 +41,21 @@ nav a {
 nav a:hover,
 nav a:active {
   color: aqua;
+  background-color: rgb(12, 1, 107);
 }
 
 nav a.active {
   color: aqua;
+  background-color: rgb(12, 1, 107);
 }
 
-.container {
+*/ .container {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
   min-height: 100vh;
-}
-
-.HomePage {
 }
 
 .upcomingToDos {
@@ -131,29 +130,26 @@ textarea:focus {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+.upcoming-todos {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10px;
+}
+
+.upcomingItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .upcomingToDos {
-  color: rgb(0, 10, 36);
   font-weight: 500;
   padding: 15px;
   margin-top: 10px;
 }
 
-.upcomingToDoItem {
-  color: rgb(0, 10, 36);
-  font-weight: 500;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 15px;
-  margin-top: 25px;
-}
-
-.upcomingToDoDueDate {
+.due-soon {
   color: red;
-  font-weight: 500;
-  padding: 15px;
-  margin-top: none;
-}
-
-.form-name {
 }
 
 .form {
@@ -190,4 +186,10 @@ textarea:focus {
 }
 .complete-todo {
   background-color: white;
+}
+
+.hide-completed-button {
+  font-size: large;
+  background-color: rgb(245, 187, 165);
+ color:rgb(12, 1, 107),
 }

@@ -7,10 +7,24 @@
       "completed": false
     },
     {
-      "task": "i'm typing in here ",
-      "dueDate": "2022-02-28",
-      "completed": false,
+      "task": "Why is this broken?",
+      "dueDate": "2022-02-25",
       "id": 2
+    },
+    {
+      "task": "Finish project",
+      "dueDate": "2022-02-17",
+      "id": 6
+    },
+    {
+      "task": "Present React Project",
+      "dueDate": "2022-02-18",
+      "id": 7
+    },
+    {
+      "task": "Complete Phase 2 Blog Post",
+      "dueDate": "2022-02-18",
+      "id": 8
     }
   ],
   "note": [

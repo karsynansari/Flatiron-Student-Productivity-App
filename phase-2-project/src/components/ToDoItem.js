@@ -12,9 +12,11 @@ function ToDoItem({ todo, setToDos }) {
       currentToDos.filter((oneToDo) => oneToDo.id !== todo.id)
     );
   }
+
   function handleCompleted() {
     setCompleted(!completed);
   }
+
   return (
     <li className="todo">
       <div>
@@ -25,13 +27,9 @@ function ToDoItem({ todo, setToDos }) {
         <button className="delete-todo" onClick={handleDelete}>
           Delete
         </button>
-        {completed ? (
-          <button onClick={handleCompleted}>Complete</button>
-        ) : (
-          <button className="complete-todo" onClick={handleCompleted}>
-            Mark As Completed
-          </button>
-        )}
+        <button className="complete-todo" onClick={handleCompleteUncomplete}>
+          {completed ? "Complete" : "Mark As Completed"}
+        </button>
       </div>
     </li>
   );
