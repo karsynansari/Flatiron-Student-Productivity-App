@@ -1,5 +1,5 @@
 # Flatiron Student Productivity App
-### Keep track of all you have to do during your software engineering bootcamp with task list app, designed for busy software engineering students by busy software engineering students. 
+### Keep track of all you have to do during your software engineering bootcamp with this task list app, designed for busy software engineering students by busy software engineering students. 
 
 ## The Why
 
