@@ -28,7 +28,7 @@ function ToDoItem({ todo, setToDos }) {
           Delete
         </button>
         <button className="complete-todo" onClick={handleCompleteUncomplete}>
-          {completed ? "Complete" : "Mark As Completed"}
+          {completed ? "Completed ✅" : "Not Completed"}
         </button>
       </div>
     </li>
