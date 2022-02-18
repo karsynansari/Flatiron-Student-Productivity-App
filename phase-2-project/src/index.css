@@ -49,7 +49,7 @@ nav a.active {
   background-color: rgb(12, 1, 107);
 }
 
-*/ .container {
+.container {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
@@ -191,5 +191,5 @@ textarea:focus {
 .hide-completed-button {
   font-size: large;
   background-color: rgb(245, 187, 165);
- color:rgb(12, 1, 107),
+  color: rgb(12, 1, 107);
 }
