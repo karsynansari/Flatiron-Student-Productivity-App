@@ -25,6 +25,6 @@ Users will be able to:
 
 1. You must have JSON server on your local machine 
 2. Fork & clone this repository & open on your local machine
-3. Run `npm start` & `npm install`
+3. Run `npm start` & `npm install` within the app directory 
 4. In a new terminal, run `npm run server`
 5. Interact with this app in your browser and start organizing your student life! 
