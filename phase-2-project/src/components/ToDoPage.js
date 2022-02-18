@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ToDoForm from "./ToDoForm";
 import ToDoItem from "./ToDoItem";
 function ToDoPage({ toDos, setToDos }) {
-  const [hideCompletedButton, setHideCompletedButton] = useState(false);
+  const [hideCompletedButton, setHideCompletedButton] = useState(true);
 
   function handleHideCompletedButton() {
     setHideCompletedButton((hideCompletedButton) => !hideCompletedButton);
@@ -31,9 +31,7 @@ function ToDoPage({ toDos, setToDos }) {
         className="hide-completed-button"
         onClick={handleHideCompletedButton}
       >
-        {hideCompletedButton
-          ? "Hide Completed ToDo's"
-          : "Show Completed ToDo's"}
+        {hideCompletedButton ? "Hide ToDo's" : "Show ToDo's"}
       </button>
       {hideCompletedButton ? <ul> {eachToDo}</ul> : null}
     </div>

@@ -1,30 +1,58 @@
 {
   "toDo": [
     {
-      "id": 1,
-      "task": "Study React Router",
-      "dueDate": "2022-2-15",
-      "completed": false
+      "task": "Study harder",
+      "dueDate": "2022-02-18",
+      "completed": false,
+      "id": 1
     },
     {
       "task": "Why is this broken?",
-      "dueDate": "2022-02-25",
+      "dueDate": "2022-02-23",
+      "completed": false,
       "id": 2
     },
     {
-      "task": "Finish project",
-      "dueDate": "2022-02-17",
+      "task": "Homework ",
+      "dueDate": "2022-02-22",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "task": "Study",
+      "dueDate": "2022-02-21",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "task": "Finish Project ",
+      "dueDate": "2022-02-23",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "task": "Clean Litterbox",
+      "dueDate": "2022-02-23",
+      "completed": false,
       "id": 6
     },
     {
-      "task": "Present React Project",
-      "dueDate": "2022-02-18",
+      "task": "Empty Dishwasher ",
+      "dueDate": "2022-02-22",
+      "completed": false,
       "id": 7
     },
     {
-      "task": "Complete Phase 2 Blog Post",
-      "dueDate": "2022-02-18",
+      "task": "Grocery Shop ",
+      "dueDate": "2022-02-21",
+      "completed": false,
       "id": 8
+    },
+    {
+      "task": "Take Out Garbage ",
+      "dueDate": "2022-02-21",
+      "completed": false,
+      "id": 9
     }
   ],
   "note": [
