@@ -9,17 +9,17 @@ Combining their knowledge of React.js (focusing on useState, useEffect, routes) 
 
 Users can: 
 
--Upon page load, be able to see tasks due in five days
--Upon visit to the ToDo route on the nav bar, be able to add new ToDo items with a due date, delete ToDo items, mark ToDo items as complete, and hide/show all ToDos.
--Upon visit to the Notepad route on the nav bar, add a new note, delete a note, and view existing notes. 
+- Upon page load, be able to see tasks due in five days
+- Upon visit to the ToDo route on the nav bar, be able to add new ToDo items with a due date, delete ToDo items, mark ToDo items as complete, and hide/show all ToDos.
+- Upon visit to the Notepad route on the nav bar, add a new note, delete a note, and view existing notes. 
 
 ## Future State 
 
 Users will be able to: 
 
--Upon page load, be able to see the current weather for their location with tailored reminders about how to change their study habits based on todays weather. 
--Sort upcoming ToDos from nearest due to farthest due. 
--On ToDo page, mark each ToDo and as completed and be able to filter ToDos based on completed/incomplete status. 
+- Upon page load, be able to see the current weather for their location with tailored reminders about how to change their study habits based on todays weather. 
+- Sort upcoming ToDos from nearest due to farthest due. 
+- On ToDo page, mark each ToDo and as completed and be able to filter ToDos based on completed/incomplete status. 
 
 ## How To Run 
 
