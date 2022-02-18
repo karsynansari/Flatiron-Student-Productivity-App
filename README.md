@@ -3,7 +3,7 @@
 
 ## The Why
 
-Combining their knowledge of React.js (focusing on useState, useEffect, routes) and CSS, [Karsyn](https://github.com/karsynansari) and Danielle, two students in Flatiron Schools Software Engineering Bootcamp, decided to make a productivity app to help keep themselves, and their fellow students, organized during bootcamp. 
+Combining their knowledge of React.js (focusing on useState, useEffect, routes) and CSS, [Karsyn](https://github.com/karsynansari) and Danielle, two students in Flatiron School's Software Engineering Bootcamp, decided to make a productivity app to help keep themselves, and their fellow students, organized during bootcamp. 
 
 ## User Journey
 
